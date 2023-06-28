@@ -1,5 +1,6 @@
 
         // Ejercicio 1
+        console.log("ejercicio 1")
 
 const ParOImpar = (numero) => {
     if (Number(numero) == numero) {
@@ -15,7 +16,7 @@ const ParOImpar = (numero) => {
   ParOImpar(numero);
   
         // Ejercicio 2
-
+        console.log("ejercicio 2")
 
   const MayorOMenor = (num1, num2) => {
     if (Number(num1) < Number(num2)) {
@@ -33,7 +34,7 @@ const ParOImpar = (numero) => {
 
 
         // Ejercicio 3
-
+        console.log("ejercicio 3")
 
   const multiplo5 = (num1) => {
     if (Number(num1) % 5 === 0){
@@ -47,6 +48,8 @@ multiplo5 (0);
 
 
         // Ejercicio 4
+        console.log("ejercicio 4")
+
 const suma = (numero) =>{
 let i = 0;
 while(i <= numero){
@@ -59,20 +62,23 @@ suma(0)
 
         // Ejercicio 5
 
+        console.log("ejercicio 5")
+
 const PalabraYNumero = (palabra, num) => {
 for (let i = 0; i < num; i++) {
   console.log(palabra);
 }
 };
- 
+
 let num = 2;
 let palabra ="fausto desojo";
 
- PalabraYNumero(palabra, num);
+PalabraYNumero(palabra, num);
 
 
         // Ejercicio 6
 
+        console.log("ejercicio 6")
         
 let palabra1 = "hola";
 let numero1 = 4;
@@ -86,14 +92,32 @@ console.log(array);
 
         // Ejercicio 7
 
-        function imprimirArrayExceptoQuintaPosicion(array) {
-            for (let i = 0; i < array.length; i++) {
-              if (i !== 4) {
-                console.log(array[i]);
-              }
+        console.log("ejercicio 7")
+
+        function imprimirArrayExceptoQuintaPosicion(numeros) {
+          for (let i = 0; i < numeros.length; i++) {
+            if (i !== 4) {
+              console.log(numeros[i]);
             }
           }
-          
-          const numeros = [1, 2, 3, 4, 25, 6, 7, 8, 9, 10];
-          imprimirArrayExceptoQuintaPosicion(numeros);
+        }
+        
+        const numeros = [1, 2, 3, 4, 25, 6, 7, 8, 9, 10];
+        imprimirArrayExceptoQuintaPosicion(numeros);
+        
+        // Ejercicio 8
+
+        console.log("ejercicio 8")
+
+        const ArrayPormultiplicador = (array1, multiplicador) => {
+          for (let i = 0; i < array1.length; i++) {
+            let resultado = array1[i] * multiplicador;
+            console.log(resultado);
+          }
+        }
+        
+        const array1 = [1, 2, 3, 4, 5];
+        const multiplicador = 100;
+        
+        ArrayPormultiplicador(array1, multiplicador);
         
